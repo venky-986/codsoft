@@ -1,25 +1,19 @@
 dev#include <iostream>
-
 using namespace std;
-
-// Function declarations
 double add(double x, double y) {
     return x + y;
 }
-
 double subtract(double x, double y) {
     return x - y;
 }
-
 double multiply(double x, double y) {
     return x * y;
 }
-
 double divide(double x, double y) {
     if (y != 0) {
         return x / y;
     } else {
-        cout << "Cannot divide by zero." << endl;
+        cout << "invalid" << endl;
         return 0.0;  
     }
 }
@@ -29,23 +23,23 @@ int main() {
     char choice;
 
     do {
-        cout << "Enter first number: ";
+        cout << "enter first number: ";
         cin >> num1;
-        cout << "Enter second number: ";
+        cout << "enter second number: ";
         cin >>num2;
-        cout << "\nChoose operation:" << endl;
-        cout << "1. Addition" << endl;
-        cout << "2. Subtraction" << endl;
-        cout << "3. Multiplication"<< endl;
-        cout << "4. Division" << endl;
-        cout << "0. Exit" << endl;
+        cout << "\nchoose operation:" << endl;
+        cout << "1. addition" << endl;
+        cout << "2. subtraction" << endl;
+        cout << "3. multiplication"<< endl;
+        cout << "4. division" << endl;
+        cout << "0. exit"<< endl;
 
-        cout << "\nEnter choice (0-4): ";
+        cout << "\nenter choice (0-4): ";
         cin >> choice;
 
         switch (choice) {
             case '0':
-                cout << "Exist" << endl;
+                cout << "exist" << endl;
                 break;
             case '1':
                 result=add(num1,num2);
